@@ -4,11 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    app:strokeWidth="2dp"
+    app:strokeColor="#CDCDCD"
     android:layout_margin="10dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal"
         android:padding="8dp">
@@ -20,7 +22,7 @@
             android:layout_margin="8dp"
             android:padding="10dp"
             android:text="Hallo"
-            android:textColor="@color/black"
+            android:textColor="?attr/colorSurfaceVariant"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/btn_delete"
             app:layout_constraintStart_toStartOf="parent"
@@ -30,7 +32,8 @@
             android:id="@+id/btn_delete"
             android:layout_width="?attr/actionBarSize"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/white"
+            android:background="@android:color/transparent"
+            android:tint="?attr/colorSurfaceVariant"
             android:src="@drawable/ic_delete"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
