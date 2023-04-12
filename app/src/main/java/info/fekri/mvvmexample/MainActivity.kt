@@ -22,7 +22,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val application = requireNotNull(this).application
         val factory = MainViewModelFactory()
         viewModel = ViewModelProvider(this, factory)[MainViewModel::class.java]
 
